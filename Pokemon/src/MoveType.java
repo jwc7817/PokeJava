@@ -1,5 +1,5 @@
 public enum MoveType {
-    Physical,
-    Special,
-    Status
+    PHYSICAL,
+    SPECIAL,
+    STATUS
 }

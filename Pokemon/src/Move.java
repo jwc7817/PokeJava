@@ -10,10 +10,18 @@ public class Move {
     public Move(String name, Types type){
         this.name = name;
         this.type = type;
-        this.power = 10;
+        this.power = 90;
         this.accuracy = 100;
-        this.moveType = MoveType.Physical;
+        this.moveType = MoveType.PHYSICAL;
         this.hasSpecialConditions = false;
+    }
+
+    public int getPower() {
+        return power;
+    }
+
+    public MoveType getMoveType() {
+        return moveType;
     }
 
 

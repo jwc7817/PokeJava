@@ -28,6 +28,7 @@ public class Pokemon {
         this.id = id;
         this.name = "Pikachu";
         this.types[0] = Types.WATER;
+        this.types[1] = Types.STEEL;
         this.stats = new Stats();
         this.moveset = new Move[4];
         this.currentHP = 100;
@@ -48,6 +49,15 @@ public class Pokemon {
     public Types[] getTypes() {
         return types;
     }
+
+    public Stats getStats() {
+        return stats;
+    }
+
+    public int getId() {
+        return id;
+    }
+
 
     public void attacks(Pokemon target, Move move) {
         double dmgMod = Pokemon.calculateDmgMod(this, target, move);

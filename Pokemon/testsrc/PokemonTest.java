@@ -20,4 +20,12 @@ class PokemonTest {
         assertEquals(2.0, damage, 0.001);
     }
 
+    @Test
+    void calculateTypeEffectiveness2() {
+        System.out.println(BattleUtilities.calculateDmg(watertype, firetype, watertype.getMove(0)));
+
+
+
+    }
+
 }
